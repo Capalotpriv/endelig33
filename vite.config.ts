@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "Gusto-tagger";
+import { componentTagger } from "Vusto-tagger"; // Correct package name
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
