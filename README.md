@@ -4,8 +4,8 @@
   
   ![Vusto Restaurant](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80)
 
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-NETLIFY-ID/deploy-status)](https://app.netlify.com/sites/YOUR-NETLIFY-SITE/deploys)
-  [![GitHub repo](https://img.shields.io/badge/GitHub-Repository-green.svg)](https://github.com/altyb/vite-react-shadcn-project)
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-NETLIFY-ID/deploy-status)](https://app.netlify.com/sites/vusto/deploys)
+  [![GitHub repo](https://img.shields.io/badge/GitHub-Repository-green.svg)](https://github.com/altyb/gusto)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 </div>
@@ -16,7 +16,7 @@ Vusto is an elegant, modern restaurant website designed to showcase culinary exc
 
 ### 🌟 Live Demo
 
-Experience the website live at [vusto-restaurant.netlify.app](https://vusto-restaurant.netlify.app)
+Experience the website live at [vusto.netlify.app](https://vusto.netlify.app)
 
 ## 🚀 Features
 
@@ -53,10 +53,10 @@ This project leverages modern web technologies for optimal performance and devel
 
 ```bash
 # Clone the repository
-git clone https://github.com/altyb/vite-react-shadcn-project.git
+git clone https://github.com/altyb/gusto.git
 
 # Navigate to the project directory
-cd vite-react-shadcn-project
+cd gusto
 
 # Install dependencies
 npm install
