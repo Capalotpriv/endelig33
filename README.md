@@ -1,69 +1,148 @@
-# Welcome to your Gusto project
+# 🍽️ Gusto - Fine Dining Restaurant Website
 
-## Project info
+<div align="center">
+  
+  ![Gusto Restaurant](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80)
 
-**URL**: https://Gusto.dev/projects/b69d8813-ac6f-439d-8c1a-38e931f2835e
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-NETLIFY-ID/deploy-status)](https://app.netlify.com/sites/YOUR-NETLIFY-SITE/deploys)
+  [![GitHub repo](https://img.shields.io/badge/GitHub-Repository-green.svg)](https://github.com/altyb/vite-react-shadcn-project)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+</div>
 
-## How can I edit this code?
+## ✨ Overview
 
-There are several ways of editing your application.
+Gusto is an elegant, modern restaurant website designed to showcase culinary excellence and provide an exceptional user experience. The website features a beautiful, responsive design that highlights the restaurant's exquisite cuisine, award-winning chefs, and impeccable service.
 
-**Use Gusto**
+### 🌟 Live Demo
 
-Simply visit the [Gusto Project](https://Gusto.dev/projects/b69d8813-ac6f-439d-8c1a-38e931f2835e) and start prompting.
+Experience the website live at [gusto-restaurant.netlify.app](https://gusto-restaurant.netlify.app)
 
-Changes made via Gusto will be committed automatically to this repo.
+## 🚀 Features
 
-**Use your preferred IDE**
+- ✅ **Stunning Visual Design** - Captivating hero sections with parallax effects and elegant typography
+- ✅ **Responsive Layout** - Perfect viewing experience across all devices from mobile to desktop
+- ✅ **Interactive Menu** - Beautifully presented dishes with detailed information and visual appeal
+- ✅ **Reservation System** - Easy-to-use contact form for table reservations
+- ✅ **Testimonials** - Customer reviews showcase the restaurant's reputation
+- ✅ **Animations** - Subtle scroll reveal animations enhance the user experience
+- ✅ **Accessibility** - Designed with accessibility in mind for all users
+- ✅ **Performance Optimized** - Fast loading times and smooth interactions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Gusto.
+## 🛠️ Technology Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project leverages modern web technologies for optimal performance and developer experience:
 
-Follow these steps:
+- **Frontend Framework**: [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/) for lightning-fast development and optimized builds
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) for beautiful, accessible components
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+- **Animations**: [Framer Motion](https://www.framer.com/motion/) for smooth, physics-based animations
+- **Routing**: [React Router](https://reactrouter.com/) for seamless navigation
+- **State Management**: React's Context API and hooks
+- **Data Fetching**: [TanStack Query](https://tanstack.com/query/latest) for efficient data management
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js (v16 or higher)
+- npm or yarn
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/altyb/vite-react-shadcn-project.git
+
+# Navigate to the project directory
+cd vite-react-shadcn-project
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The development server will start at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Build for Production
 
-**Use GitHub Codespaces**
+```bash
+# Generate a production build
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview the production build locally
+npm run preview
+```
 
-## What technologies are used for this project?
+## 🌐 Deployment
 
-This project is built with .
+This project is configured for easy deployment on Netlify:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Push your code to GitHub
+2. Connect your GitHub repository to Netlify
+3. Configure the build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
 
-## How can I deploy this project?
+The site will automatically deploy when changes are pushed to the main branch.
 
-Simply open [Gusto](https://Gusto.dev/projects/b69d8813-ac6f-439d-8c1a-38e931f2835e) and click on Share -> Publish.
+## 📂 Project Structure
 
-## I want to use a custom domain - is that possible?
+```
+/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions and helpers
+│   ├── pages/          # Page components
+│   ├── styles/         # Global styles
+│   ├── App.tsx         # Main application component
+│   └── main.tsx        # Application entry point
+├── index.html          # HTML template
+├── vite.config.ts      # Vite configuration
+├── tailwind.config.ts  # Tailwind CSS configuration
+└── netlify.toml        # Netlify deployment configuration
+```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.Gusto.dev/tips-tricks/custom-domain/)
+## 🎨 Design Philosophy
+
+The design of Gusto's website embodies elegance, sophistication, and culinary artistry. Key design principles include:
+
+- **Visual Hierarchy**: Guiding users through content with intentional layout and typography
+- **White Space**: Generous spacing to create a clean, uncluttered experience
+- **Typography**: Serif fonts for headings paired with sans-serif for body text
+- **Color Palette**: Rich, warm tones that evoke a sense of luxury and comfort
+- **Imagery**: High-quality food and restaurant photography to stimulate appetite and interest
+- **Micro-interactions**: Subtle animations and transitions that delight users
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Contact
+
+For inquiries about this project, please contact:
+
+- **Developer**: [Your Name](mailto:altybanony@gmail.com)
+- **Website**: [your-portfolio.com](https://your-portfolio.com)
+
+---
+
+<div align="center">
+  <p>Designed and developed with ❤️ by <a href="https://github.com/altyb">altyb</a></p>
+  <p>© 2025 Gusto Restaurant. All rights reserved.</p>
+</div>
