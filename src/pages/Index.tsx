@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import TestimonialCard from "@/components/TestimonialCard";
 import CustomerReviews from "@/components/CustomerReviews";
 import { ChevronRight, Utensils, Award, Clock } from "lucide-react";
 import { motion } from "framer-motion";
@@ -139,7 +138,7 @@ export default function Index() {
           
           <ScrollReveal delay={600}>
             <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 leading-relaxed">
-              Experience the extraordinary at Gusto, where tradition meets innovation. Each dish tells a story of passion, creativity, and the finest ingredients.
+              Experience the extraordinary at Vusto, where tradition meets innovation. Each dish tells a story of passion, creativity, and the finest ingredients.
             </p>
           </ScrollReveal>
           
@@ -176,7 +175,7 @@ export default function Index() {
           <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
             <ScrollReveal>
               <span className="inline-block text-xs font-medium uppercase tracking-wider bg-primary/10 px-3 py-1 rounded-full text-primary mb-3 sm:mb-4">
-                The Gusto Experience
+                The Vusto Experience
               </span>
             </ScrollReveal>
             
@@ -188,7 +187,7 @@ export default function Index() {
             
             <ScrollReveal delay={300}>
               <p className="text-sm sm:text-base text-muted-foreground">
-                At Gusto, we're committed to creating memorable experiences through exceptional food, drink, and service. Our approach balances tradition with innovation, resulting in a dining experience that delights all the senses.
+                At Vusto, we're committed to creating memorable experiences through exceptional food, drink, and service. Our approach balances tradition with innovation, resulting in a dining experience that delights all the senses.
               </p>
             </ScrollReveal>
           </div>
@@ -306,7 +305,7 @@ export default function Index() {
                   Passion for Culinary Excellence
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
-                  Founded in 2010, Gusto was born from Chef Antonio Rossi's vision to create a restaurant where classic techniques meet contemporary innovation. With over 20 years of experience in Michelin-starred restaurants across Europe, Chef Rossi brings unparalleled expertise and creativity to every dish.
+                  Founded in 2010, Vusto was born from Chef Antonio Rossi's vision to create a restaurant where classic techniques meet contemporary innovation. With over 20 years of experience in Michelin-starred restaurants across Europe, Chef Rossi brings unparalleled expertise and creativity to every dish.
                 </p>
                 <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
                   Our team sources the finest ingredients from local farmers and artisanal producers, ensuring peak flavor and freshness. Each menu item represents our commitment to sustainability, craftsmanship, and exceptional dining experiences.
@@ -340,7 +339,7 @@ export default function Index() {
             
             <ScrollReveal delay={300}>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Don't just take our word for it. Here's what our valued guests have to say about their dining experiences at Gusto.
+                Don't just take our word for it. Here's what our valued guests have to say about their dining experiences at Vusto.
               </p>
             </ScrollReveal>
           </div>
@@ -376,7 +375,7 @@ export default function Index() {
             
             <ScrollReveal delay={300}>
               <p className="text-sm sm:text-base text-white/80 mb-6 sm:mb-8">
-                Experience the extraordinary flavors and ambiance of Gusto. Whether it's a special celebration or a casual dinner, we look forward to serving you.
+                Experience the extraordinary flavors and ambiance of Vusto. Whether it's a special celebration or a casual dinner, we look forward to serving you.
               </p>
             </ScrollReveal>
             

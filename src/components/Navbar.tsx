@@ -62,7 +62,7 @@ export default function Navbar() {
           to="/"
           className="flex items-center gap-2"
         >
-          <span className="text-xl font-serif font-bold">Gusto</span>
+          <span className="text-xl font-serif font-bold">Vusto</span>
         </Link>
 
         {/* Desktop Navigation - Centered */}

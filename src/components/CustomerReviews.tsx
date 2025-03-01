@@ -68,7 +68,7 @@ const CustomerReviews = () => {
           
           <ScrollReveal delay={300}>
             <p className="text-muted-foreground">
-              Our customers love the exceptional dining experience at Gusto. Here are some of our loyal patrons who have shared their experiences.
+              Our customers love the exceptional dining experience at Vusto. Here are some of our loyal patrons who have shared their experiences.
             </p>
           </ScrollReveal>
         </div>
@@ -86,7 +86,7 @@ const CustomerReviews = () => {
                 transition={{ delay: 0.5, duration: 0.7 }}
               >
                 <p className="italic text-lg mb-6">
-                  "Gusto has completely transformed my dining expectations. The ambiance, service, and most importantly, the food - everything is exceptional!"
+                  "Vusto has completely transformed my dining expectations. The ambiance, service, and most importantly, the food - everything is exceptional!"
                 </p>
                 <div className="flex items-center justify-center space-x-1 mb-2">
                   {[1, 2, 3, 4, 5].map((star) => (

@@ -54,7 +54,7 @@ export default function ContactForm() {
     {
       icon: <Mail size={20} />,
       title: "Email",
-      content: "contact@gustorestaurant.com",
+      content: "contact@Vustorestaurant.com",
     },
     {
       icon: <MapPin size={20} />,

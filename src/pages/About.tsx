@@ -103,7 +103,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
-                  Founded in 2010, Gusto began as a humble family-owned establishment with a dream to share our passion for culinary excellence with the world. What started as a small café has now evolved into one of the most celebrated dining destinations in the city.
+                  Founded in 2010, Vusto began as a humble family-owned establishment with a dream to share our passion for culinary excellence with the world. What started as a small café has now evolved into one of the most celebrated dining destinations in the city.
                 </motion.p>
                 <motion.p 
                   className="text-muted-foreground"
@@ -160,7 +160,7 @@ export default function About() {
               <ScrollReveal delay={200} direction="left" className="order-2 lg:order-1">
                 <h3 className="text-2xl font-serif font-medium mb-4">Chef Alessandro Romano</h3>
                 <p className="text-muted-foreground mb-4">
-                  With over 20 years of culinary experience across Europe and America, Chef Alessandro brings his unique vision and expertise to every dish served at Gusto. He trained at the prestigious Culinary Institute of Milan and has worked in Michelin-starred restaurants around the world.
+                  With over 20 years of culinary experience across Europe and America, Chef Alessandro brings his unique vision and expertise to every dish served at Vusto. He trained at the prestigious Culinary Institute of Milan and has worked in Michelin-starred restaurants around the world.
                 </p>
                 <motion.div
                   className="relative mt-6 mb-6 p-6 bg-primary/5 rounded-lg border border-primary/10"

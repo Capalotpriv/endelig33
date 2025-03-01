@@ -214,7 +214,7 @@ export default function Contact() {
                   {[
                     { icon: <MapPin className="w-5 h-5 text-primary" />, title: "Address", content: "123 Gourmet Avenue, Food District, CA 90210" },
                     { icon: <Phone className="w-5 h-5 text-primary" />, title: "Phone", content: "(555) 123-4567" },
-                    { icon: <Mail className="w-5 h-5 text-primary" />, title: "Email", content: "contact@gustorestaurant.com" },
+                    { icon: <Mail className="w-5 h-5 text-primary" />, title: "Email", content: "contact@Vustorestaurant.com" },
                     { icon: <Clock className="w-5 h-5 text-primary" />, title: "Hours", content: ["Mon - Fri: 11am - 10pm", "Sat - Sun: 10am - 11pm"] }
                   ].map((item, index) => (
                     <motion.div 

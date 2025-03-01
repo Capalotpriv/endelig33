@@ -1,8 +1,8 @@
-# 🍽️ Gusto - Fine Dining Restaurant Website
+# 🍽️ Vusto - Fine Dining Restaurant Website
 
 <div align="center">
   
-  ![Gusto Restaurant](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80)
+  ![Vusto Restaurant](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80)
 
   [![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-NETLIFY-ID/deploy-status)](https://app.netlify.com/sites/YOUR-NETLIFY-SITE/deploys)
   [![GitHub repo](https://img.shields.io/badge/GitHub-Repository-green.svg)](https://github.com/altyb/vite-react-shadcn-project)
@@ -12,11 +12,11 @@
 
 ## ✨ Overview
 
-Gusto is an elegant, modern restaurant website designed to showcase culinary excellence and provide an exceptional user experience. The website features a beautiful, responsive design that highlights the restaurant's exquisite cuisine, award-winning chefs, and impeccable service.
+Vusto is an elegant, modern restaurant website designed to showcase culinary excellence and provide an exceptional user experience. The website features a beautiful, responsive design that highlights the restaurant's exquisite cuisine, award-winning chefs, and impeccable service.
 
 ### 🌟 Live Demo
 
-Experience the website live at [gusto-restaurant.netlify.app](https://gusto-restaurant.netlify.app)
+Experience the website live at [vusto-restaurant.netlify.app](https://vusto-restaurant.netlify.app)
 
 ## 🚀 Features
 
@@ -110,7 +110,7 @@ The site will automatically deploy when changes are pushed to the main branch.
 
 ## 🎨 Design Philosophy
 
-The design of Gusto's website embodies elegance, sophistication, and culinary artistry. Key design principles include:
+The design of Vusto's website embodies elegance, sophistication, and culinary artistry. Key design principles include:
 
 - **Visual Hierarchy**: Guiding users through content with intentional layout and typography
 - **White Space**: Generous spacing to create a clean, uncluttered experience
@@ -137,12 +137,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For inquiries about this project, please contact:
 
-- **Developer**: [Your Name](mailto:altybanony@gmail.com)
-- **Website**: [your-portfolio.com](https://your-portfolio.com)
+- **Developer**: [Altyb-anony](mailto:altybanony@gmail.com)
+- **Website**: [altyb.dev](https://altyb.dev)
 
 ---
 
 <div align="center">
   <p>Designed and developed with ❤️ by <a href="https://github.com/altyb">altyb</a></p>
-  <p>© 2025 Gusto Restaurant. All rights reserved.</p>
+  <p>© 2025 Vusto Restaurant. All rights reserved.</p>
 </div>
