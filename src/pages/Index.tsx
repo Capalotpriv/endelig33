@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { useRef, useState } from "react";
 import DishDetailsModal from "@/components/DishDetailsModal";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function Index() {
   const features = [
@@ -113,10 +114,14 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden max-w-full">
         <div className="absolute inset-0 z-0">
-          <img
+          <ResponsiveImage
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop"
             alt="Restaurant interior"
-            className="w-full h-full object-cover max-w-full"
+            className="w-full h-full"
+            objectFit="cover"
+            priority={true}
+            width={2070}
+            height={1380}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
         </div>
@@ -243,10 +248,12 @@ export default function Index() {
                   onClick={() => openDishDetails(dish)}
                 >
                   <div className="h-56 sm:h-64 md:h-72 overflow-hidden">
-                    <img 
+                    <ResponsiveImage 
                       src={dish.image}
                       alt={dish.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 max-w-full"
+                      className="w-full h-full"
+                      objectFit="cover"
+                      priority={index < 2}
                     />
                   </div>
                   <div className="p-4 sm:p-6 flex flex-col flex-grow">
@@ -280,10 +287,13 @@ export default function Index() {
             <ScrollReveal direction="left">
               <div className="relative">
                 <div className="rounded-lg overflow-hidden">
-                  <img
+                  <ResponsiveImage
                     src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop"
                     alt="Chef preparing food"
-                    className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover max-w-full"
+                    className="w-full h-[300px] sm:h-[400px] md:h-[500px]"
+                    objectFit="cover"
+                    width={2070}
+                    height={1380}
                   />
                 </div>
                 <div className="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 bg-card p-4 sm:p-6 rounded-lg shadow-lg border border-border max-w-[250px] sm:max-w-xs">

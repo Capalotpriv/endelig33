@@ -1,6 +1,7 @@
 import React from "react";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ResponsiveImage from "./ResponsiveImage";
 
 interface DishDetailsModalProps {
   dish: {
@@ -77,14 +78,20 @@ const DishDetailsModal: React.FC<DishDetailsModalProps> = ({
             <div className="flex flex-col md:flex-row">
               {/* Image */}
               <div className="md:w-1/2 h-64 md:h-auto overflow-hidden">
-                <motion.img
+                <motion.div
                   initial={{ scale: 1 }}
                   animate={{ scale: 1.05 }}
                   transition={{ duration: 10, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-                  src={dish.image}
-                  alt={dish.name}
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full"
+                >
+                  <ResponsiveImage
+                    src={dish.image}
+                    alt={dish.name}
+                    className="w-full h-full"
+                    objectFit="cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </motion.div>
               </div>
 
               {/* Content */}
