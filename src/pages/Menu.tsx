@@ -13,6 +13,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { Check, CreditCard, Minus, Plus, ShoppingBag, Truck } from "lucide-react";
 import { useMediaQuery } from "@/hooks/use-media-query";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // Menu data
 const menuItems = [
@@ -360,12 +361,12 @@ export default function Menu() {
                   onClick={() => openItemDetails(item)}
                 >
                   <div className="relative h-48 mb-4 overflow-hidden rounded-lg">
-                    <img
-                      src={optimizeImageUrl(item.image, 600)}
+                    <ResponsiveImage
+                      src={item.image}
                       alt={item.name}
-                      loading="lazy"
-                      decoding="async"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
+                      className="w-full h-full"
+                      objectFit="cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-5">
@@ -383,25 +384,26 @@ export default function Menu() {
       </main>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="w-[95vw] max-w-3xl overflow-hidden bg-background p-0 rounded-lg mx-auto">
+        <DialogContent className="w-full max-w-2xl max-h-[85vh] overflow-hidden bg-background p-0 rounded-lg mx-auto" style={{ maxHeight: "calc(100vh - 40px)" }}>
           {selectedItem && (
             <div className="overflow-hidden">
-              <div className="relative h-48 sm:h-60 md:h-80 overflow-hidden">
-                <img 
-                  src={optimizeImageUrl(selectedItem.image, 1200)} 
+              <div className="relative h-48 sm:h-60 md:h-64 overflow-hidden">
+                <ResponsiveImage
+                  src={selectedItem.image}
                   alt={selectedItem.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="w-full h-full"
+                  objectFit="cover"
+                  priority={true}
+                  sizes="(max-width: 768px) 100vw, 1200px"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                  <div className="p-4 sm:p-6 w-full">
+                  <div className="p-4 sm:p-5 w-full">
                     <AnimatePresence>
                       <motion.h2 
                         initial={{ opacity: 0, y: 20 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.5 }}
-                        className="text-2xl sm:text-3xl font-serif text-white mb-1"
+                        className="text-xl sm:text-2xl font-serif text-white mb-1"
                       >
                         {selectedItem.name}
                       </motion.h2>
@@ -419,13 +421,13 @@ export default function Menu() {
                 </div>
               </div>
               
-              <div className="p-4 sm:p-6">
+              <div className="p-4 sm:p-5 overflow-y-auto" style={{ maxHeight: 'calc(85vh - 240px)' }}>
                 <AnimatePresence>
                   <motion.p 
                     initial={{ opacity: 0, y: 10 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 0.4, delay: 0.3 }}
-                    className="text-base sm:text-lg leading-relaxed mb-4 sm:mb-6"
+                    className="text-sm sm:text-base leading-relaxed mb-4 sm:mb-5"
                   >
                     {selectedItem.description}
                   </motion.p>
