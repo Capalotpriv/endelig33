@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { optimizeImageUrl, generateResponsiveSrcSet, getImageDimensions } from "@/lib/image-utils";
 
 interface ResponsiveImageProps {
@@ -25,8 +25,8 @@ export default function ResponsiveImage({
   const [isLoaded, setIsLoaded] = useState(false);
   const dimensions = width && height ? { width, height } : getImageDimensions(src);
   
-  // Generate a low-quality placeholder for the image
-  const placeholderUrl = optimizeImageUrl(src, 10, 'auto');
+  // Use preholder.png instead of dynamic placeholder
+  const placeholderUrl = "/preholder.png";
   
   // Only use lazy loading if not priority
   const loadingAttribute = priority ? "eager" : "lazy";
