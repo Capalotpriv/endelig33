@@ -137,7 +137,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For inquiries about this project, please contact:
 
-- **Developer**: [Altyb-anony](mailto:altybanony@gmail.com)
+- **Developer**: [Altyb-anony](mailto:al7ankales@gmail.com)
 
 ---
 
