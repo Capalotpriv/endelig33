@@ -135,7 +135,7 @@ const DishDetailsModal: React.FC<DishDetailsModalProps> = ({
                     transition={{ delay: 0.4 }}
                     className="mb-3"
                   >
-                    <h3 className="font-medium text-sm mb-1.5">Ingredients</h3>
+                    <h3 className="font-medium text-sm mb-1.5">Ingredienser</h3>
                     <ul className="list-disc pl-5 text-xs text-muted-foreground">
                       {dish.ingredients.map((ingredient, index) => (
                         <li key={index}>{ingredient}</li>
@@ -152,7 +152,7 @@ const DishDetailsModal: React.FC<DishDetailsModalProps> = ({
                       transition={{ delay: 0.5 }}
                       className="text-xs"
                     >
-                      <span className="block text-xxs text-muted-foreground">Preparation Time</span>
+                      <span className="block text-xxs text-muted-foreground">Tilberedningstid</span>
                       <span className="font-medium">{dish.preparationTime}</span>
                     </motion.div>
                   )}
@@ -164,7 +164,7 @@ const DishDetailsModal: React.FC<DishDetailsModalProps> = ({
                       transition={{ delay: 0.5 }}
                       className="text-xs"
                     >
-                      <span className="block text-xxs text-muted-foreground">Calories</span>
+                      <span className="block text-xxs text-muted-foreground">Kalorier</span>
                       <span className="font-medium">{dish.calories}</span>
                     </motion.div>
                   )}
@@ -177,7 +177,7 @@ const DishDetailsModal: React.FC<DishDetailsModalProps> = ({
                     transition={{ delay: 0.6 }}
                     className="mt-3 text-xs"
                   >
-                    <span className="block text-xxs text-muted-foreground mb-1">Allergens</span>
+                    <span className="block text-xxs text-muted-foreground mb-1">Allergener</span>
                     <div className="flex flex-wrap gap-1">
                       {dish.allergens.map((allergen, index) => (
                         <span key={index} className="px-1.5 py-0.5 bg-muted rounded-full text-xxs">

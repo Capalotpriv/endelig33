@@ -40,7 +40,7 @@ export default function About() {
               <div className="text-center mb-2">
                 {/* Animated heading with letters appearing one by one */}
                 <h1 className="text-4xl md:text-5xl font-serif font-bold inline-flex flex-wrap justify-center">
-                  {Array.from("About Us").map((letter, i) => (
+                  {Array.from("Om oss").map((letter, i) => (
                     <motion.span
                       key={i}
                       custom={i}
@@ -55,7 +55,7 @@ export default function About() {
                 </h1>
               </div>
               <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-                Our journey from a small family kitchen to an award-winning restaurant
+                Oppskriftene våre er inspirert av familiemiddager og smaker vi vokste opp med. Nå vil vi dele dem med deg. 
               </p>
             </ScrollReveal>
             
@@ -89,7 +89,7 @@ export default function About() {
                     className="text-3xl font-serif font-medium mb-4 relative inline-block"
                     whileHover={{ scale: 1.02 }}
                   >
-                  <span>Our Story</span>
+                  <span>Vår historie</span>
                   <motion.span 
                     className="absolute -bottom-1 left-0 w-full h-1 bg-primary/70 rounded-full"
                     initial={{ width: 0 }}
@@ -103,7 +103,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
-                  Founded in 2010, Vusto began as a humble family-owned establishment with a dream to share our passion for culinary excellence with the world. What started as a small café has now evolved into one of the most celebrated dining destinations in the city.
+                33 Street Food ble født av en drøm om å dele ekte matglede, og vi er her for å skape smaksopplevelser som forener mennesker i hjertet av Sarpsborg.
                 </motion.p>
                 <motion.p 
                   className="text-muted-foreground"
@@ -111,7 +111,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.9 }}
                 >
-                  Our philosophy is simple: use the freshest seasonal ingredients, prepare them with care, and serve them with love. We believe that dining is not just about food, but about creating memorable experiences that bring people together.
+                  Vår filosofi er enkel: bruk de ferskeste sesongbaserte råvarene, tilbered dem med omhu og server dem med kjærlighet. Vi tror at å spise ikke bare handler om mat, men om å skape minneverdige opplevelser som bringer folk sammen.
                 </motion.p>
                 </div>
               </ScrollReveal>
@@ -127,103 +127,9 @@ export default function About() {
               />
             </div>
             
-            <ScrollReveal>
-              <div className="text-center mb-12 relative">
-                <GlowingEffect
-                  spread={45}
-                  glow={true}
-                  disabled={false}
-                  proximity={100}
-                  inactiveZone={0.01}
-                  borderWidth={2.5}
-                  variant="default"
-                />
-                <motion.h2 
-                  className="text-3xl font-serif font-medium inline-block"
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.7 }}
-                  whileHover={{ scale: 1.05, color: "hsl(var(--secondary))" }}
-                >
-                  Meet Our Chef
-                  <motion.div
-                    className="w-full h-1 bg-primary/70 mt-2 rounded-full"
-                    initial={{ scaleX: 0 }}
-                    whileInView={{ scaleX: 1 }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                  />
-                </motion.h2>
-              </div>
-            </ScrollReveal>
+           
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <ScrollReveal delay={200} direction="left" className="order-2 lg:order-1">
-                <h3 className="text-2xl font-serif font-medium mb-4">Chef Alessandro Romano</h3>
-                <p className="text-muted-foreground mb-4">
-                  With over 20 years of culinary experience across Europe and America, Chef Alessandro brings his unique vision and expertise to every dish served at Vusto. He trained at the prestigious Culinary Institute of Milan and has worked in Michelin-starred restaurants around the world.
-                </p>
-                <motion.div
-                  className="relative mt-6 mb-6 p-6 bg-primary/5 rounded-lg border border-primary/10"
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.7, delay: 0.3 }}
-                  whileHover={{ 
-                    scale: 1.02,
-                    boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-                  }}
-                >
-                  <div className="absolute -top-3 -left-3 text-4xl text-primary opacity-50">"</div>
-                  <div className="absolute -bottom-3 -right-3 text-4xl text-primary opacity-50">"</div>
-                  <p className="italic text-muted-foreground relative z-10">
-                    Cooking is an art that engages all the senses. My goal is to create dishes that not only taste extraordinary but also tell a story and evoke emotions.
-                  </p>
-                  <p className="text-right mt-2 text-sm font-medium">— Chef Alessandro</p>
-                </motion.div>
-              </ScrollReveal>
-              
-              <ScrollReveal delay={400} direction="right" className="order-1 lg:order-2">
-                <div className="rounded-lg overflow-hidden relative">
-                  <GlowingEffect
-                    spread={30}
-                    glow={true}
-                    disabled={false}
-                    proximity={100}
-                    inactiveZone={0.01}
-                    borderWidth={2}
-                  />
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                    whileHover={{ opacity: 1 }}
-                  />
-                  <motion.img 
-                    src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c" 
-                    alt="Chef Alessandro" 
-                    className="w-full h-auto object-cover aspect-[3/4]"
-                    initial={{ y: 0 }}
-                    whileInView={{ 
-                      y: [0, -15, 0], 
-                      transition: { 
-                        repeat: Infinity, 
-                        repeatType: "reverse", 
-                        duration: 6,
-                        ease: "easeInOut" 
-                      } 
-                    }}
-                    whileHover={{ scale: 1.03 }}
-                    transition={{ duration: 0.4 }}
-                  />
-                  <motion.div 
-                    className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white text-center transform translate-y-full"
-                    whileHover={{ translateY: 0 }}
-                    initial={{ translateY: "100%" }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p className="font-medium text-sm">Chef Alessandro Romano</p>
-                    <p className="text-xs text-white/80">Executive Chef & Founder</p>
-                  </motion.div>
-                </div>
-              </ScrollReveal>
-            </div>
+            
             
             <ScrollReveal delay={600} className="mt-16">
               <div className="text-center mb-12 relative">
@@ -243,7 +149,7 @@ export default function About() {
                   transition={{ duration: 0.7 }}
                   whileHover={{ scale: 1.05, color: "hsl(var(--primary))" }}
                 >
-                  Our Values
+                  Våre verdier
                   <motion.div
                     className="w-full h-1 bg-primary/70 mt-2 rounded-full"
                     initial={{ scaleX: 0 }}
@@ -257,26 +163,26 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
-                  The principles that guide our restaurant and define our commitment to excellence.
+                  Prinsippene som styrer restauranten vår og definerer vår forpliktelse til kvalitet.
                 </motion.p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "Quality",
-                    description: "We source only the finest ingredients from local farmers and suppliers.",
+                    title: "Kvalitet",
+                    description: "Vi håndplukker de beste ingrediensene for å sikre enestående smaksopplevelser.",
                     icon: <Leaf className="h-6 w-6" />,
                     color: "bg-green-100 dark:bg-green-900/20"
                   },
                   {
-                    title: "Creativity",
-                    description: "We constantly innovate while respecting culinary traditions.",
+                    title: "Kreativitet",
+                    description: "Vi innoverer kontinuerlig samtidig som vi respekterer kulinariske tradisjoner.",
                     icon: <Sparkles className="h-6 w-6" />,
                     color: "bg-purple-100 dark:bg-purple-900/20"
                   },
                   {
-                    title: "Community",
-                    description: "We strive to create a welcoming space for all our guests.",
+                    title: "Sammfunn",
+                    description: "Vi streber etter å skape et innbydende sted for alle våre gjester.",
                     icon: <Heart className="h-6 w-6" />,
                     color: "bg-blue-100 dark:bg-blue-900/20"
                   }
@@ -317,50 +223,6 @@ export default function About() {
                 ))}
               </div>
             </ScrollReveal>
-            
-            {/* Glowing Effect Demo Section */}
-            <div className="mt-24 mb-16">
-              <ScrollReveal>
-                <div className="text-center mb-12 relative">
-                  <GlowingEffect
-                    spread={55}
-                    glow={true}
-                    disabled={false}
-                    proximity={110}
-                    inactiveZone={0.01}
-                    borderWidth={3}
-                    variant="default"
-                  />
-                  <motion.h2 
-                    className="text-3xl font-serif font-medium inline-block"
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.7 }}
-                    whileHover={{ scale: 1.05, color: "hsl(var(--accent))" }}
-                  >
-                    Our Achievements
-                    <motion.div
-                      className="w-full h-1 bg-primary/70 mt-2 rounded-full"
-                      initial={{ scaleX: 0 }}
-                      whileInView={{ scaleX: 1 }}
-                      transition={{ duration: 0.5, delay: 0.5 }}
-                    />
-                  </motion.h2>
-                  <motion.p 
-                    className="text-muted-foreground mt-4 max-w-2xl mx-auto"
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.7 }}
-                  >
-                    Explore our journey of excellence and the milestones we've achieved along the way.
-                  </motion.p>
-                </div>
-              </ScrollReveal>
-              
-              <ScrollReveal delay={300}>
-                <GlowingEffectDemo />
-              </ScrollReveal>
-            </div>
           </div>
         </div>
       </main>

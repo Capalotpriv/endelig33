@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import CustomerReviews from "@/components/CustomerReviews";
-import { ChevronRight, Utensils, Award, Clock } from "lucide-react";
+import { ChevronRight, Utensils, Award, Clock, ChefHat  } from "lucide-react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { useRef, useState } from "react";
@@ -15,75 +15,52 @@ export default function Index() {
   const features = [
     {
       icon: <Utensils className="h-6 w-6" />,
-      title: "Exquisite Cuisine",
-      description: "Our chefs blend traditional techniques with modern innovation to create unforgettable flavors.",
+      title: "Eksklusiv matkunst",
+      description: "Våre kokker forener tradisjon og nytenkning for å gi deg en uforglemmelig matopplevelse.",
     },
     {
-      icon: <Award className="h-6 w-6" />,
-      title: "Award Winning",
-      description: "Recognized for culinary excellence with multiple industry awards and distinctions.",
+      icon: <ChefHat  className="h-6 w-6" />,
+      title: "Unike smaksopplevelser",
+      description: "Hos oss møter råvarer av høy kvalitet kreativt håndverk, hver rett er laget for å imponere.",
     },
     {
       icon: <Clock className="h-6 w-6" />,
-      title: "Impeccable Service",
-      description: "Our attentive staff ensures a seamless dining experience from beginning to end.",
+      title: "Førsteklasses service",
+      description: "Vårt dedikerte team sikrer en elegant og problemfri opplevelse fra ankomst til avreise.",
     },
   ];
 
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      rating: 5,
-      date: "April 15, 2023",
-      content: "The tasting menu was exceptional. Each course was thoughtfully prepared with beautiful presentation and incredible flavors. The sommelier's wine pairings were perfect. Can't wait to return!",
-    },
-    {
-      name: "Michael Chen",
-      rating: 5,
-      date: "March 22, 2023",
-      content: "Our anniversary dinner exceeded all expectations. The service was attentive without being intrusive, and the chef's special dessert surprise made our celebration truly memorable.",
-    },
-    {
-      name: "Emma Rodriguez",
-      rating: 4,
-      date: "May 2, 2023",
-      content: "The ambiance is elegant yet comfortable. I particularly enjoyed the seasonal fish dish and the craft cocktail selection. A wonderful spot for special occasions.",
-    },
-  ];
+
 
   const popularDishes = [
     {
-      name: "Truffle Risotto",
-      description: "Creamy arborio rice, wild mushrooms, black truffle shavings, aged parmesan",
-      image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641",
-      price: "$28",
-      ingredients: ["Arborio rice", "Wild mushrooms", "Black truffle", "Aged parmesan", "White wine", "Vegetable stock", "Shallots", "Butter"],
-      allergens: ["Dairy", "Gluten"],
-      preparationTime: "25 minutes",
-      calories: "520 kcal",
-      dietaryInfo: ["Vegetarian"]
-    },
+      name: "Klassikeren",
+      description: "Salat, tomat, gul løk, ost, bacon, løkringer og husets hamburgerdressing",
+      image: new URL('../assets/klassisk.webp', import.meta.url).href,
+      price: "135 kr",
+      allergens: ["Hvete", "Melk", "Egg"],
+      preparationTime: "15 minutter",
+      
+      dietaryInfo: []
+    }, 
     {
-      name: "Pan-Seared Scallops",
-      description: "Cauliflower puree, bacon jam, micro herbs, citrus reduction",
-      image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      price: "$32",
-      ingredients: ["Fresh scallops", "Cauliflower", "Bacon", "Micro herbs", "Citrus", "Butter", "Cream"],
-      allergens: ["Shellfish", "Dairy"],
-      preparationTime: "20 minutes",
-      calories: "380 kcal",
+      name: "Carbonara",
+      description: "Tagliatelle, sprøstekt bacon, kremfløte, olivenolje, parmesan, toppet med ruccola.",
+      image: new URL('../assets/carbonara.webp', import.meta.url).href ,
+      price: "160kr",
+      allergens: ["Hvete", "Melk"],
+      preparationTime: "15 minutter",
+      
       dietaryInfo: []
     },
     {
-      name: "Chocolate Soufflé",
-      description: "Warm dark chocolate, vanilla bean ice cream, berry compote",
-      image: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      price: "$14",
-      ingredients: ["Dark chocolate", "Eggs", "Sugar", "Butter", "Vanilla bean", "Berries", "Cream"],
-      allergens: ["Eggs", "Dairy"],
-      preparationTime: "18 minutes",
-      calories: "420 kcal",
-      dietaryInfo: ["Vegetarian"]
+      name: "Nutella-Calzone",
+      description: "Nybakt brød med nutellafyll.",
+      image: new URL('../assets/nutella.jpg', import.meta.url).href,
+      price: "98 kr",
+      allergens: ["Hvete", "Melk", "Selleri"],
+      preparationTime: "10 minutter",
+      
     },
   ];
 
@@ -129,21 +106,21 @@ export default function Index() {
         <div className="container relative z-10 mt-16 sm:mt-20 px-4 text-center text-white">
           <ScrollReveal delay={200}>
             <span className="inline-block text-xs font-medium uppercase tracking-wider bg-primary/20 px-3 py-1 rounded-full text-white mb-3 sm:mb-4">
-              Fine Dining Experience
+              Eksklusiv mat og intense smaksopplevelser
             </span>
           </ScrollReveal>
           
           <ScrollReveal delay={400}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif mb-4 sm:mb-6 leading-tight">
-              Culinary <span className="text-primary">Excellence</span>
+            Mesterlig <span className="text-primary">Mat</span>
               <br /> 
-              Reimagined
+              Nytenkt
             </h1>
           </ScrollReveal>
           
           <ScrollReveal delay={600}>
             <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 leading-relaxed">
-              Experience the extraordinary at Vusto, where tradition meets innovation. Each dish tells a story of passion, creativity, and the finest ingredients.
+              Utforsk autentiske smaker og enestående smaksopplevelser
             </p>
           </ScrollReveal>
           
@@ -151,12 +128,12 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/menu" className="w-full sm:w-auto">
                 <Button className="rounded-full px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
-                  View Our Menu
+                  Se menyen
                 </Button>
               </Link>
               <Link to="/contact" className="w-full sm:w-auto">
                 <Button variant="outline" className="rounded-full px-6 sm:px-8 py-5 sm:py-6 border-white/30 backdrop-blur-sm bg-white/10 hover:bg-white/20 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
-                  Make a Reservation
+                  Reserver et bord
                 </Button>
               </Link>
             </div>
@@ -180,19 +157,19 @@ export default function Index() {
           <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
             <ScrollReveal>
               <span className="inline-block text-xs font-medium uppercase tracking-wider bg-primary/10 px-3 py-1 rounded-full text-primary mb-3 sm:mb-4">
-                The Vusto Experience
+                Vår opplevelse
               </span>
             </ScrollReveal>
             
             <ScrollReveal delay={200}>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
-                Elevating Dining to an Art Form
+                Fremhevende mat og enestående smaksopplevelser
               </h2>
             </ScrollReveal>
             
             <ScrollReveal delay={300}>
               <p className="text-sm sm:text-base text-muted-foreground">
-                At Vusto, we're committed to creating memorable experiences through exceptional food, drink, and service. Our approach balances tradition with innovation, resulting in a dining experience that delights all the senses.
+                Vi er dedikert til å skape minneverdige opplevelser gjennom ekstraordinær mat, drikke og service. Vår tilnærming balanserer tradisjon med innovasjon, noe som resulterer i en måltid som gløder alle smaker.
               </p>
             </ScrollReveal>
           </div>
@@ -223,19 +200,19 @@ export default function Index() {
           <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
             <ScrollReveal>
               <span className="inline-block text-xs font-medium uppercase tracking-wider bg-primary/10 px-3 py-1 rounded-full text-primary mb-3 sm:mb-4">
-                Chef's Selection
+                Våre beste
               </span>
             </ScrollReveal>
             
             <ScrollReveal delay={200}>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
-                Our Most Popular Creations
+                Våre mest populære retter
               </h2>
             </ScrollReveal>
             
             <ScrollReveal delay={300}>
               <p className="text-sm sm:text-base text-muted-foreground">
-                These signature dishes exemplify our culinary philosophy and have become favorites among our guests. Each plate is crafted with precision and care, using only the finest seasonal ingredients.
+                Disse signatureretter representerer vår kulinarisk filosofi og har blitt favoritter blant våre gjester. Hver plate er laget med nøyaktighet og omsorg, ved hjelp av bare de fineste sesongingredienser.
               </p>
             </ScrollReveal>
           </div>
@@ -260,7 +237,7 @@ export default function Index() {
                     <h3 className="text-lg sm:text-xl font-serif font-medium mb-1 sm:mb-2">{dish.name}</h3>
                     <p className="text-sm sm:text-base text-muted-foreground">{dish.description}</p>
                     <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-border">
-                      <span className="text-xs sm:text-sm font-medium text-primary">Chef's Signature Dish</span>
+                      <span className="text-xs sm:text-sm font-medium text-primary"></span>
                     </div>
                   </div>
                 </div>
@@ -272,92 +249,15 @@ export default function Index() {
             <ScrollReveal delay={700}>
               <Link to="/menu" className="w-full sm:w-auto inline-block">
                 <Button className="rounded-full px-6 sm:px-8 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
-                  Explore Full Menu
+                  Utforsk hele menyen
                 </Button>
               </Link>
             </ScrollReveal>
           </div>
         </div>
       </section>
-      
-      {/* About Preview Section */}
-      <section className="py-12 sm:py-16 md:py-24 w-full overflow-hidden">
-        <div className="container px-4 mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <ScrollReveal direction="left">
-              <div className="relative">
-                <div className="rounded-lg overflow-hidden">
-                  <ResponsiveImage
-                    src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop"
-                    alt="Chef preparing food"
-                    className="w-full h-[300px] sm:h-[400px] md:h-[500px]"
-                    objectFit="cover"
-                    width={2070}
-                    height={1380}
-                  />
-                </div>
-                <div className="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 bg-card p-4 sm:p-6 rounded-lg shadow-lg border border-border max-w-[250px] sm:max-w-xs">
-                  <p className="text-muted-foreground italic text-xs sm:text-sm">
-                    "We're dedicated to creating unforgettable dining experiences through craftsmanship, quality ingredients, and genuine hospitality."
-                  </p>
-                  <p className="mt-3 sm:mt-4 font-medium text-sm sm:text-base">Chef Antonio Rossi</p>
-                  <p className="text-xs text-muted-foreground">Executive Chef</p>
-                </div>
-              </div>
-            </ScrollReveal>
-            
-            <ScrollReveal direction="right">
-              <div className="lg:pl-8">
-                <span className="inline-block text-xs font-medium uppercase tracking-wider bg-primary/10 px-3 py-1 rounded-full text-primary mb-3 sm:mb-4">
-                  Our Story
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
-                  Passion for Culinary Excellence
-                </h2>
-                <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
-                  Founded in 2010, Vusto was born from Chef Antonio Rossi's vision to create a restaurant where classic techniques meet contemporary innovation. With over 20 years of experience in Michelin-starred restaurants across Europe, Chef Rossi brings unparalleled expertise and creativity to every dish.
-                </p>
-                <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
-                  Our team sources the finest ingredients from local farmers and artisanal producers, ensuring peak flavor and freshness. Each menu item represents our commitment to sustainability, craftsmanship, and exceptional dining experiences.
-                </p>
-                <Link to="/about" className="w-full sm:w-auto inline-block">
-                  <Button variant="outline" className="rounded-full w-full sm:w-auto">
-                    Learn More About Us
-                  </Button>
-                </Link>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-      
-      {/* Testimonials Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-muted w-full overflow-hidden">
-        <div className="container px-4 mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
-            <ScrollReveal>
-              <span className="inline-block text-xs font-medium uppercase tracking-wider bg-primary/10 px-3 py-1 rounded-full text-primary mb-3 sm:mb-4">
-                Guest Experiences
-              </span>
-            </ScrollReveal>
-            
-            <ScrollReveal delay={200}>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
-                What Our Guests Say
-              </h2>
-            </ScrollReveal>
-            
-            <ScrollReveal delay={300}>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Don't just take our word for it. Here's what our valued guests have to say about their dining experiences at Vusto.
-              </p>
-            </ScrollReveal>
-          </div>
           
-          <CustomerReviews />
-        </div>
-      </section>
-      
+        
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-24 relative w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -373,19 +273,19 @@ export default function Index() {
           <div className="max-w-3xl mx-auto text-center text-white">
             <ScrollReveal>
               <span className="inline-block text-xs font-medium uppercase tracking-wider bg-primary/20 px-3 py-1 rounded-full text-white mb-3 sm:mb-4">
-                Join Us
+                Bli med oss
               </span>
             </ScrollReveal>
             
             <ScrollReveal delay={200}>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
-                Reserve Your Table Today
+                Reserver et bord i dag
               </h2>
             </ScrollReveal>
             
             <ScrollReveal delay={300}>
               <p className="text-sm sm:text-base text-white/80 mb-6 sm:mb-8">
-                Experience the extraordinary flavors and ambiance of Vusto. Whether it's a special celebration or a casual dinner, we look forward to serving you.
+                Utforsk ekstraordinære smaker og atmosfære på 33 Street Food. Uansett om det er en spesiell tilnærming eller en enkel måltid, vi ser frem til å servere deg.
               </p>
             </ScrollReveal>
             
@@ -393,12 +293,12 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Link to="/contact" className="w-full sm:w-auto">
                   <Button className="rounded-full px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
-                    Make a Reservation
+                    Reserver et bord
                   </Button>
                 </Link>
                 <Link to="/menu" className="w-full sm:w-auto">
                   <Button variant="outline" className="rounded-full px-6 sm:px-8 py-5 sm:py-6 border-white/30 backdrop-blur-sm bg-white/10 hover:bg-white/20 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
-                    View Our Menu
+                    Se menyen
                   </Button>
                 </Link>
               </div>

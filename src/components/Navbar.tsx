@@ -42,10 +42,10 @@ export default function Navbar() {
   }, [isOpen]);
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Menu", path: "/menu" },
-    { name: "About Us", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Hjem", path: "/" },
+    { name: "Meny", path: "/menu" },
+    { name: "Om oss", path: "/about" },
+    { name: "Kontakt", path: "/contact" },
   ];
 
   return (
@@ -62,7 +62,7 @@ export default function Navbar() {
           to="/"
           className="flex items-center gap-2"
         >
-          <span className="text-xl font-serif font-bold">Vusto</span>
+          <span className="text-xl font-serif font-bold">33 Street Food</span>
         </Link>
 
         {/* Desktop Navigation - Centered */}
@@ -89,7 +89,7 @@ export default function Navbar() {
           <ThemeToggle />
           <Link to="/contact">
             <Button className="rounded-full" size="sm">
-              Reserve a Table
+              Reserver et bord
             </Button>
           </Link>
         </div>
@@ -137,7 +137,7 @@ export default function Navbar() {
             ))}
             <Link to="/contact" className="w-full mt-6">
               <Button className="w-full rounded-full">
-                Reserve a Table
+                Reserver et bord
               </Button>
             </Link>
           </nav>
