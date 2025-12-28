@@ -19,7 +19,7 @@ import lol from "@/assets/video/Lol.mp4";
 import olo from "@/assets/video/Lol (1).mp4";
 import mimi from "@/assets/video/Lol_1_V1.mp4";
 import hovedbilde from "@/assets/unnamed2.jpg";
-import nyttVideo from "@/assets/video/33video.mp4";
+import nyttVideo from "@/assets/video/33Video.mp4";
 
 
 export default function Index() {
