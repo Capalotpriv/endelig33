@@ -6,6 +6,7 @@ import { GlowingEffectDemo } from "@/components/ui/glowing-effect-demo";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { Leaf, Sparkles, Heart } from "lucide-react";
 import { useEffect } from "react";
+import bilde from "@/assets/omoss.jpeg";
 
 export default function About() {
   // Scroll to top when component mounts
@@ -63,7 +64,7 @@ export default function About() {
               <ScrollReveal delay={200} direction="left">
                 <div className="rounded-lg overflow-hidden group">
                   <motion.img 
-                    src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e" 
+                    src={bilde} 
                     alt="Restaurant interior" 
                     className="w-full h-auto object-cover aspect-[4/3] transition-all duration-700"
                     whileHover={{ scale: 1.05 }}

@@ -10,6 +10,17 @@ import { useMediaQuery } from "@/hooks/use-media-query";
 import { useRef, useState } from "react";
 import DishDetailsModal from "@/components/DishDetailsModal";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Video from "@/assets/video/33Video.mp4";
+import Pasta from "@/assets/nypastaaa.jpeg";
+import Nypasta from "@/assets/nyerepasta.png";
+import Fine from "@/assets/image0.jpeg";
+import NyVideo from "@/assets/video/nyTT.mp4";
+import lol from "@/assets/video/Lol.mp4";
+import olo from "@/assets/video/Lol (1).mp4";
+import mimi from "@/assets/video/Lol_1_V1.mp4";
+import hovedbilde from "@/assets/unnamed2.jpg";
+import nyttVideo from "@/assets/video/33video.mp4";
+
 
 export default function Index() {
   const features = [
@@ -34,9 +45,9 @@ export default function Index() {
 
   const popularDishes = [
     {
-      name: "Klassikeren",
-      description: "Salat, tomat, gul løk, ost, bacon, løkringer og husets hamburgerdressing",
-      image: new URL('../assets/klassisk.webp', import.meta.url).href,
+      name: "Every day sandwich",
+      description: "Nybakt brød, stekt til perfeksjon hver morgen. Fylte lag av kvalitetsråvarer, balansert med våre signatur sauser. Inspirasjonen er hentet fra hjertet av Napoli, men smaker finner du kun hos oss.",
+      image: Fine,
       price: "135 kr",
       allergens: ["Hvete", "Melk", "Egg"],
       preparationTime: "15 minutter",
@@ -44,9 +55,9 @@ export default function Index() {
       dietaryInfo: []
     }, 
     {
-      name: "Carbonara",
-      description: "Tagliatelle, sprøstekt bacon, kremfløte, olivenolje, parmesan, toppet med ruccola.",
-      image: new URL('../assets/carbonara.webp', import.meta.url).href ,
+      name: "Autentisk Pasta",
+      description: "Vår tagliatelle kommer i varianter: Pesto med kyllingfillet, Trøffel med indrefilet, Carbonara med bacon",
+      image: Nypasta,
       price: "160kr",
       allergens: ["Hvete", "Melk"],
       preparationTime: "15 minutter",
@@ -56,7 +67,7 @@ export default function Index() {
     {
       name: "Nutella-Calzone",
       description: "Nybakt brød med nutellafyll.",
-      image: new URL('../assets/nutella.jpg', import.meta.url).href,
+      image: new URL('../assets/nynutella.jpeg', import.meta.url).href,
       price: "98 kr",
       allergens: ["Hvete", "Melk", "Selleri"],
       preparationTime: "10 minutter",
@@ -91,16 +102,8 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden max-w-full">
         <div className="absolute inset-0 z-0">
-          <ResponsiveImage
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop"
-            alt="Restaurant interior"
-            className="w-full h-full"
-            objectFit="cover"
-            priority={true}
-            width={2070}
-            height={1380}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+        <video src={mimi} autoPlay loop muted style={{zIndex: 1}} className="w-full h-full object-cover priority={true} width={2070} height={1380}"></video>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>  
         </div>
         
         <div className="container relative z-10 mt-16 sm:mt-20 px-4 text-center text-white">
@@ -224,9 +227,9 @@ export default function Index() {
                   className="group overflow-hidden rounded-lg bg-card border border-border shadow-sm hover:shadow-md transition-shadow h-full flex flex-col cursor-pointer"
                   onClick={() => openDishDetails(dish)}
                 >
-                  <div className="h-56 sm:h-64 md:h-72 overflow-hidden">
+                  <div className="zoom-out-image">
                     <ResponsiveImage 
-                      src={dish.image}
+                      src={typeof dish.image === 'string' ? dish.image : ''}
                       alt={dish.name}
                       className="w-full h-full"
                       objectFit="cover"
@@ -261,11 +264,8 @@ export default function Index() {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-24 relative w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2074&auto=format&fit=crop"
-            alt="Restaurant interior"
-            className="w-full h-full object-cover max-w-full"
-          />
+        <video src={nyttVideo} autoPlay loop muted style={{zIndex: 1}} className="w-full h-full object-cover priority={true} width={2070} height={1380}">
+        </video>
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         
