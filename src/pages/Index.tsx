@@ -102,7 +102,7 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden max-w-full">
         <div className="absolute inset-0 z-0">
-        <video src={mimi} autoPlay loop muted style={{zIndex: 1}} className="w-full h-full object-cover priority={true} width={2070} height={1380}"></video>
+        <video src={mimi} autoPlay loop muted playsInline style={{zIndex: 1}} className="w-full h-full object-cover"></video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>  
         </div>
         
@@ -264,8 +264,7 @@ export default function Index() {
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-24 relative w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
-        <video src={nyttVideo} autoPlay loop muted style={{zIndex: 1}} className="w-full h-full object-cover priority={true} width={2070} height={1380}">
-        </video>
+        <video src={nyttVideo} autoPlay loop muted playsInline style={{zIndex: 1}} className="w-full h-full object-cover"></video>
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         
