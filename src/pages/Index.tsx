@@ -17,7 +17,7 @@ import Fine from "@/assets/image0.jpeg";
 import NyVideo from "@/assets/video/nyTT.mp4";
 import lol from "@/assets/video/Lol.mp4";
 import olo from "@/assets/video/Lol (1).mp4";
-import mimi from "@/assets/video/nowat";
+import mimi from "@/assets/video/nowat.mp4";
 import hovedbilde from "@/assets/unnamed2.jpg";
 import nyttVideo from "@/assets/video/33Video.mp4";
 
