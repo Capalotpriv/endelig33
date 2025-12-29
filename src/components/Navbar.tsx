@@ -43,9 +43,9 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Hjem", path: "/" },
-    { name: "Meny", path: "/menu" },
-    { name: "Om oss", path: "/about" },
-    { name: "Kontakt", path: "/contact" },
+    { name: "Meny", path: "/meny" },
+    { name: "Om oss", path: "/om-oss" },
+    { name: "Kontakt", path: "/kontakt" },
   ];
 
   return (
@@ -87,7 +87,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <ThemeToggle />
-          <Link to="/contact">
+          <Link to="/kontakt">
             <Button className="rounded-full" size="sm">
               Reserver et bord
             </Button>
@@ -135,7 +135,7 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Link to="/contact" className="w-full mt-6">
+            <Link to="/kontakt" className="w-full mt-6">
               <Button className="w-full rounded-full">
                 Reserver et bord
               </Button>

@@ -33,10 +33,9 @@ const App = () => (
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/menu" element={<Menu />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="/meny" element={<Menu />} />
+              <Route path="/om-oss" element={<About />} />
+              <Route path="/kontakt" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

@@ -129,12 +129,12 @@ export default function Index() {
           
           <ScrollReveal delay={800}>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Link to="/menu" className="w-full sm:w-auto">
+              <Link to="/meny" className="w-full sm:w-auto">
                 <Button className="rounded-full px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
                   Se menyen
                 </Button>
               </Link>
-              <Link to="/contact" className="w-full sm:w-auto">
+              <Link to="/kontakt" className="w-full sm:w-auto">
                 <Button variant="outline" className="rounded-full px-6 sm:px-8 py-5 sm:py-6 border-white/30 backdrop-blur-sm bg-white/10 hover:bg-white/20 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
                   Reserver et bord
                 </Button>
@@ -250,7 +250,7 @@ export default function Index() {
           
           <div className="text-center mt-8 sm:mt-12">
             <ScrollReveal delay={700}>
-              <Link to="/menu" className="w-full sm:w-auto inline-block">
+              <Link to="/meny" className="w-full sm:w-auto inline-block">
                 <Button className="rounded-full px-6 sm:px-8 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
                   Utforsk hele menyen
                 </Button>
@@ -291,12 +291,12 @@ export default function Index() {
             
             <ScrollReveal delay={400}>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <Link to="/contact" className="w-full sm:w-auto">
+                <Link to="/kontakt" className="w-full sm:w-auto">
                   <Button className="rounded-full px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
                     Reserver et bord
                   </Button>
                 </Link>
-                <Link to="/menu" className="w-full sm:w-auto">
+                <Link to="/meny" className="w-full sm:w-auto">
                   <Button variant="outline" className="rounded-full px-6 sm:px-8 py-5 sm:py-6 border-white/30 backdrop-blur-sm bg-white/10 hover:bg-white/20 w-full sm:w-auto" size={isMobile ? "default" : "lg"}>
                     Se menyen
                   </Button>
