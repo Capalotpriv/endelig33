@@ -215,7 +215,7 @@ export default function Contact() {
                     { icon: <MapPin className="w-5 h-5 text-primary" />, title: "Adresse", content: "Kirkegata 54, 1712 Sarpsborg" },
                     { icon: <Phone className="w-5 h-5 text-primary" />, title: "Telefon", content: "(+47) 973 30 333" },
                     { icon: <Mail className="w-5 h-5 text-primary" />, title: "E-post", content: "contact@33streetfood.com" },
-                    { icon: <Clock className="w-5 h-5 text-primary" />, title: "Åpningstider", content: ["Man–Tir: 12–22", "Ons: 12–22", "Tor: 11–22", "Fre: 10–22", "Lør: 12–22", "Søn: 10–22"] }
+                    { icon: <Clock className="w-5 h-5 text-primary" />, title: "Åpningstider", content: ["Man: 12–22", "Tir: 12–22", "Ons: 12–22", "Tor: 11–22", "Fre: 10–22", "Lør: 12–22", "Søn: 10–22"] }
                   ].map((item, index) => (
                     <motion.div 
                       key={index} 
