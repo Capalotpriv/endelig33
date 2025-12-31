@@ -55,9 +55,14 @@ export default function Footer() {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-medium text-sm uppercase tracking-wider">Åpning</h4>
-            <div className="text-muted-foreground">
-              <p><span className="font-medium">Alle dager:</span> 09:00 - 22:00</p>
+            <h4 className="font-medium text-sm uppercase tracking-wider">Åpningstider</h4>
+            <div className="text-muted-foreground text-sm space-y-1">
+              <p><span className="font-medium">Man–Tir:</span> 12:00 – 22:00</p>
+              <p><span className="font-medium">Ons:</span> 12:00 – 22:00</p>
+              <p><span className="font-medium">Tor:</span> 11:00 – 22:00</p>
+              <p><span className="font-medium">Fre:</span> 10:00 – 22:00</p>
+              <p><span className="font-medium">Lør:</span> 12:00 – 22:00</p>
+              <p><span className="font-medium">Søn:</span> 10:00 – 22:00</p>
               <div className="mt-4 flex space-x-3">
                 <a href="https://www.instagram.com/33street.food?utm_source=ig_web_button_share_sheet&igsh=MTh5cWk4Z2xkemc5" target="_blank" rel="noreferrer" aria-label="Instagram">
                   <Instagram size={20} className="text-foreground hover:text-primary transition-colors" />
